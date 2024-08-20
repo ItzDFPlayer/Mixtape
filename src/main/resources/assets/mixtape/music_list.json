@@ -2,428 +2,512 @@
   "minecraft": {
     "name": "Minecraft",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.minecraft"
   },
   "clark": {
     "name": "Clark",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.clark"
   },
   "sweden": {
     "name": "Sweden",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.alpha"
   },
   "biome_fest": {
     "name": "Biome Fest",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.beta"
   },
   "blind_spots": {
     "name": "Blind Spots",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.blind_spots"
   },
   "haunt_muskie": {
     "name": "Haunt Muskie",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.haunt_muskie"
   },
   "aria_math": {
     "name": "Aria Math",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.aria_math"
   },
   "dreiton": {
     "name": "Dreiton",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.dreiton"
   },
   "taswell": {
     "name": "Taswell",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.taswell"
   },
   "subwoofer_lullaby": {
     "name": "Subwoofer Lullaby",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.subwoofer_lullaby"
   },
   "living_mice": {
     "name": "Living Mice",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.living_mice"
   },
   "haggstrom": {
     "name": "Haggstrom",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.haggstrom"
   },
   "danny": {
     "name": "Danny",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.danny"
   },
   "key": {
     "name": "Key",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.key"
   },
   "oxygene": {
     "name": "Oxygène",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.oxygene"
   },
   "dry_hands": {
     "name": "Dry Hands",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.dry_hands"
   },
   "wet_hands": {
     "name": "Wet Hands",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.wet_hands"
   },
   "mice_on_venus": {
     "name": "Mice On Venus",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.mice_on_venus"
   },
 
   "aerie": {
     "name": "Aerie",
     "artist": "Lena Raine",
-    "album": "Minecraft: The Wild Update"
+    "album": "Minecraft: The Wild Update",
+    "identifier": "mixtape:music.aerie"
   },
   "ancestry": {
     "name": "Ancestry",
     "artist": "Lena Raine",
-    "album": "Minecraft: Caves & Cliffs"
+    "album": "Minecraft: Caves & Cliffs",
+    "identifier": "mixtape:music.ancestry"
   },
   "an_ordinary_day": {
     "name": "An Ordinary Day",
     "artist": "Kumi Tanioka",
-    "album": "Minecraft: Caves & Cliffs"
+    "album": "Minecraft: Caves & Cliffs",
+    "identifier": "mixtape:music.an_ordinary_day"
   },
   "comforting_memories": {
     "name": "Comforting Memories",
     "artist": "Kumi Tanioka",
-    "album": "Minecraft: Caves & Cliffs"
+    "album": "Minecraft: Caves & Cliffs",
+    "identifier": "mixtape:music.comforting_memories"
   },
   "firebugs": {
     "name": "Firebugs",
     "artist": "Lena Raine",
-    "album": "Minecraft: The Wild Update"
+    "album": "Minecraft: The Wild Update",
+    "identifier": "mixtape:music.firebugs"
   },
   "floating_dream": {
     "name": "Floating Dream",
     "artist": "Kumi Tanioka",
-    "album": "Minecraft: Caves & Cliffs"
+    "album": "Minecraft: Caves & Cliffs",
+    "identifier": "mixtape:music.floating_dream"
   },
   "infinite_amethyst": {
     "name": "Infinite Amethyst",
     "artist": "Lena Raine",
-    "album": "Minecraft: Caves & Cliffs"
+    "album": "Minecraft: Caves & Cliffs",
+    "identifier": "mixtape:music.infinite_amethyst"
   },
   "labyrinthine": {
     "name": "Labyrinthine",
     "artist": "Lena Raine",
-    "album": "Minecraft: The Wild Update"
+    "album": "Minecraft: The Wild Update",
+    "identifier": "mixtape:music.labyrinthine"
   },
   "left_to_bloom": {
     "name": "Left To Bloom",
     "artist": "Lena Raine",
-    "album": "Minecraft: Caves & Cliffs"
+    "album": "Minecraft: Caves & Cliffs",
+    "identifier": "mixtape:music.left_to_bloom"
   },
   "one_more_day": {
     "name": "One More Day",
     "artist": "Lena Raine",
-    "album": "Minecraft: Caves & Cliffs"
+    "album": "Minecraft: Caves & Cliffs",
+    "identifier": "mixtape:music.one_more_day"
   },
   "stand_tall": {
     "name": "Stand Tall",
     "artist": "Lena Raine",
-    "album": "Minecraft: Caves & Cliffs"
+    "album": "Minecraft: Caves & Cliffs",
+    "identifier": "mixtape:music.stand_tall"
   },
   "wending": {
     "name": "Wending",
     "artist": "Lena Raine",
-    "album": "Minecraft: Caves & Cliffs"
+    "album": "Minecraft: Caves & Cliffs",
+    "identifier": "mixtape:music.wending"
   },
 
   "axolotl": {
     "name": "Axolotl",
     "artist": "C418",
-    "album": "Axolotl - Single"
+    "album": "Axolotl - Single",
+    "identifier": "mixtape:music.axolotl"
   },
   "dragon_fish": {
     "name": "Dragon Fish",
     "artist": "C418",
-    "album": "Dragon Fish - Single"
+    "album": "Dragon Fish - Single",
+    "identifier": "mixtape:music.dragon_fish"
   },
   "shuniji": {
     "name": "Shuniji",
     "artist": "C418",
-    "album": "Shuniji - Single"
+    "album": "Shuniji - Single",
+    "identifier": "mixtape:music.shuniji"
   },
 
   "concrete_halls": {
     "name": "Concrete Halls",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.concrete_halls"
   },
   "dead_voxel": {
     "name": "Dead Voxel",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.dead_voxel"
   },
   "warmth": {
     "name": "Warmth",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.warmth"
   },
   "ballad_of_the_cats": {
     "name": "Ballad of the Cats",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.ballad_of_the_cats"
   },
   "chrysopoeia": {
     "name": "Chrysopoeia",
     "artist": "Lena Raine",
-    "album": "Minecraft: Nether Update"
+    "album": "Minecraft: Nether Update",
+    "identifier": "mixtape:music.chrysopoeia"
   },
   "rubedo": {
     "name": "Rubedo",
     "artist": "Lena Raine",
-    "album": "Minecraft: Nether Update"
+    "album": "Minecraft: Nether Update",
+    "identifier": "mixtape:music.rubedo"
   },
   "so_below": {
     "name": "So Below",
     "artist": "Lena Raine",
-    "album": "Minecraft: Nether Update"
+    "album": "Minecraft: Nether Update",
+    "identifier": "mixtape:music.so_below"
   },
 
   "boss": {
     "name": "Boss",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.boss"
   },
   "the_end": {
     "name": "The End",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.the_end"
   },
 
   "mutation": {
     "name": "Mutation",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.mutation"
   },
   "moog_city_2": {
     "name": "Moog City 2",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.moog_city_2"
   },
   "beginning_2": {
     "name": "Beginning 2",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.beginning_2"
   },
   "floating_trees": {
     "name": "Floating Trees",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.floating_trees"
   },
   "alpha": {
     "name": "Alpha",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.alpha"
   },
 
   "11": {
     "name": "11",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "minecraft:music_disc.11"
   },
   "13": {
     "name": "Thirteen",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "minecraft:music_disc.13"
   },
   "5": {
     "name": "5",
     "artist": "Samuel Åberg",
-    "album": "Minecraft: The Wild Update"
+    "album": "Minecraft: The Wild Update",
+    "identifier": "minecraft:music_disc.5"
   },
   "blocks": {
     "name": "Blocks",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "minecraft:music_disc.blocks"
   },
   "cat": {
     "name": "Cat",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "minecraft:music_disc.cat"
   },
   "chirp": {
     "name": "Chirp",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "minecraft:music_disc.chirp"
   },
   "far": {
     "name": "Far",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "minecraft:music_disc.far"
   },
   "mall": {
     "name": "Mall",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "minecraft:music_disc.mall"
   },
   "mellohi": {
     "name": "Mellohi",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "minecraft:music_disc.mellohi"
   },
   "otherside": {
     "name": "Otherside",
     "artist": "Lena Raine",
-    "album": "Minecraft: Caves & Cliffs"
+    "album": "Minecraft: Caves & Cliffs",
+    "identifier": "minecraft:music_disc.otherside"
   },
   "pigstep": {
     "name": "Pigstep",
     "artist": "Lena Raine",
-    "album": "Minecraft: Nether Update"
+    "album": "Minecraft: Nether Update",
+    "identifier": "minecraft:music_disc.pigstep"
   },
   "stal": {
     "name": "Stal",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "minecraft:music_disc.stal"
   },
   "strad": {
     "name": "Strad",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "minecraft:music_disc.strad"
   },
   "wait": {
     "name": "Wait",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "minecraft:music_disc.wait"
   },
   "ward": {
     "name": "Ward",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "minecraft:music_disc.ward"
   },
 
   "0": {
     "name": "0",
     "artist": "C418",
-    "album": "0x10c"
+    "album": "0x10c",
+    "identifier": "mixtape:music.0"
   },
   "0x10c": {
     "name": "0x10c",
     "artist": "C418",
-    "album": "0x10c"
+    "album": "0x10c",
+    "identifier": "mixtape:music.0x10c"
   },
   "beginning": {
     "name": "Beginning",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.beginning"
   },
   "chris": {
     "name": "Chris",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.chris"
   },
   "dog": {
     "name": "Dog",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.dog"
   },
   "door": {
     "name": "Door",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.door"
   },
   "eleven": {
     "name": "Eleven",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.eleven"
   },
   "equinoxe": {
     "name": "Équinoxe",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.equinoxe"
   },
   "excuse": {
     "name": "Excuse",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.excuse"
   },
   "intro": {
     "name": "Intro",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.intro"
   },
   "ki": {
     "name": "Ki",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.ki"
   },
   "kyoto": {
     "name": "Kyoto",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.kyoto"
   },
   "moog_city": {
     "name": "Moog City",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.moog_city"
   },
   "flake": {
     "name": "Flake",
     "artist": "C418",
-    "album": "Minecraft - Volume Beta"
+    "album": "Minecraft - Volume Beta",
+    "identifier": "mixtape:music.flake"
   },
   "memento_mori": {
     "name": "Memento Mori",
     "artist": "C418",
-    "album": "Memento Mori - Single"
+    "album": "Memento Mori - Single",
+    "identifier": "mixtape:music.memento_mori"
   },
   "droopy_likes_ricochet": {
     "name": "Droopy Likes Ricochet",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.droopy_likes_ricochet"
   },
   "droopy_likes_your_face": {
     "name": "Droopy Likes Your Face",
     "artist": "C418",
-    "album": "Minecraft - Volume Alpha"
+    "album": "Minecraft - Volume Alpha",
+    "identifier": "mixtape:music.droopy_likes_your_face"
   },
   "echo_in_the_wind": {
     "name": "Echo in the Wind",
     "artist": "Aaron Cherof",
-    "album": "Minecraft: Trails & Tales"
+    "album": "Minecraft: Trails & Tales",
+    "identifier": "mixtape:music.echo_in_the_wind"
   },
   "a_familiar_room": {
     "name": "A Familiar Room",
     "artist": "Aaron Cherof",
-    "album": "Minecraft: Trails & Tales"
+    "album": "Minecraft: Trails & Tales",
+    "identifier": "mixtape:music.a_familiar_room"
   },
   "bromeliad": {
     "name": "Bromeliad",
     "artist": "Aaron Cherof",
-    "album": "Minecraft: Trails & Tales"
+    "album": "Minecraft: Trails & Tales",
+    "identifier": "mixtape:music.bromeliad"
   },
   "crescent_dunes": {
     "name": "Crescent Dunes",
     "artist": "Aaron Cherof",
-    "album": "Minecraft: Trails & Tales"
+    "album": "Minecraft: Trails & Tales",
+    "identifier": "mixtape:music.crescent_dunes"
   },
   "relic": {
     "name": "Relic",
     "artist": "Aaron Cherof",
-    "album": "Minecraft: Trails & Tales"
+    "album": "Minecraft: Trails & Tales",
+    "identifier": "mixtape:music.relic"
   }
 }
