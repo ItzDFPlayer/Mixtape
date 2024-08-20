@@ -38,7 +38,7 @@ import static net.minecraft.sound.SoundCategory.MUSIC;
 public class Mixtape implements ClientModInitializer {
     public static final Logger LOGGER = LogManager.getLogger();
 
-    public static final String MOD_VERSION = "v1.6.2";
+    public static final String MOD_VERSION = "1.6.2";
     public static final String MOD_ID = "mixtape";
     private static KeyBinding skipKey;
     private static KeyBinding pauseKey;
@@ -47,6 +47,7 @@ public class Mixtape implements ClientModInitializer {
     public static int debugTimeUntilNextSong = Integer.MAX_VALUE;
     public static int debugMaxTimeUntilNextSong = Integer.MAX_VALUE;
     public static boolean discPlaying = false;
+    public static boolean previewingSong = false;
     public static boolean startSong = false;
     public static float volumeScale = 1.0f;
     public static boolean paused = false;
