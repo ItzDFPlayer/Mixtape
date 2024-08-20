@@ -6,15 +6,19 @@
   "client": [
     "DebugHudMixin",
     "GameMenuScreenMixin",
+    "GroupSeparatorEntryMixin",
     "InGameHudMixin",
+    "ListGroupSeparatorEntryMixin",
     "MinecraftClientMixin",
     "MusicDiscItemMixin",
     "MusicTrackerMixin",
     "OptionsScreenMixin",
     "PositionedSoundInstanceMixin",
     "SoundSystemMixin",
+    "TabManagerMixin",
     "ToastManagerEntryMixin",
-    "WorldRendererMixin"
+    "WorldRendererMixin",
+    "YACLScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
