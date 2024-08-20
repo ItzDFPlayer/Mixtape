@@ -8,6 +8,7 @@ import net.minecraft.text.Text;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 public class ModConfig {
     public static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
@@ -86,8 +87,11 @@ public class ModConfig {
         public boolean stopMusicWhenSwitchingDimensions = true;
         public boolean stopMusicWhenLeftGame = true;
         public boolean enableDebugInfo = true;
+        public boolean avoidRepetition = false;
+        public double songListPercent = 50;
         public boolean showCurrentSong = true;
         public SongLocation songLocation = SongLocation.PAUSE_SCREEN;
+        public List<String> favouriteSongs = List.of();
         public boolean hideUpdateBadge = false;
     }
 
@@ -109,6 +113,16 @@ public class ModConfig {
         public int minSongDelay = 20;
         public int maxSongDelay = 600;
         public float volume = 100;
+        public List<String> songs = List.of(
+            "mutation",
+            "moog_city_2",
+            "beginning_2",
+            "floating_trees",
+            "a_familiar_room",
+            "bromeliad",
+            "crescent_dunes",
+            "echo_in_the_wind"
+        );
     }
 
     public static class CreativeConfig {
@@ -116,14 +130,320 @@ public class ModConfig {
         public int minSongDelay = 12000;
         public int maxSongDelay = 24000;
         public float volume = 100;
+        public List<String> songs = List.of(
+            "a_familiar_room",
+            "minecraft",
+            "clark",
+            "sweden",
+            "comforting_memories",
+            "floating_dream",
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "left_to_bloom",
+            "key",
+            "oxygene",
+            "one_more_day",
+            "dry_hands",
+            "wet_hands",
+            "mice_on_venus",
+            "biome_fest",
+            "blind_spots",
+            "haunt_muskie",
+            "aria_math",
+            "dreiton",
+            "taswell"
+        );
     }
 
     public static class GameConfig {
         public boolean enabled = true;
         public int minSongDelay = 12000;
         public int maxSongDelay = 24000;
-        public boolean creativeMusicPlaysInSurvival = false;
         public float volume = 100;
+        public boolean specificOverworldMusic = true;
+        public List<String> songs = List.of(
+            "a_familiar_room",
+            "minecraft",
+            "clark",
+            "sweden",
+            "comforting_memories",
+            "floating_dream",
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "left_to_bloom",
+            "key",
+            "oxygene",
+            "one_more_day",
+            "dry_hands",
+            "wet_hands",
+            "mice_on_venus",
+            "crescent_dunes",
+            "echo_in_the_wind",
+            "bromeliad",
+            "infinite_amethyst",
+            "wending",
+            "aerie",
+            "firebugs",
+            "labyrinthine",
+            "stand_tall"
+        );
+
+        public List<String> gameSongs = List.of(
+            "a_familiar_room",
+            "minecraft",
+            "clark",
+            "sweden",
+            "comforting_memories",
+            "floating_dream",
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "left_to_bloom",
+            "key",
+            "oxygene",
+            "one_more_day",
+            "dry_hands",
+            "wet_hands",
+            "mice_on_venus"
+        );
+
+        public List<String> badlandsSongs = List.of(
+            "crescent_dunes",
+            "echo_in_the_wind",
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "key",
+            "oxygene",
+            "one_more_day",
+            "dry_hands",
+            "wet_hands",
+            "mice_on_venus"
+        );
+
+        public List<String> bambooJungleSongs = List.of(
+            "bromeliad",
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "left_to_bloom",
+            "key",
+            "oxygene",
+            "one_more_day",
+            "dry_hands",
+            "wet_hands",
+            "mice_on_venus"
+        );
+
+        public List<String> cherryGroveSongs = List.of(
+            "bromeliad",
+            "minecraft",
+            "clark",
+            "sweden",
+            "echo_in_the_wind",
+            "left_to_bloom"
+        );
+
+        public List<String> deepDarkSongs = List.of("ancestry");
+
+        public List<String> desertSongs = List.of(
+            "crescent_dunes",
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "key",
+            "oxygene",
+            "one_more_day"
+        );
+
+        public List<String> dripstoneCavesSongs = List.of(
+            "an_ordinary_day",
+            "subwoofer_lullaby",
+            "danny",
+            "infinite_amethyst",
+            "key",
+            "oxygene",
+            "wending"
+        );
+
+        public List<String> flowerForestSongs = List.of(
+            "bromeliad",
+            "echo_in_the_wind",
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "left_to_bloom",
+            "key",
+            "oxygene"
+        );
+
+        public List<String> forestSongs = List.of(
+    "bromeliad",
+            "minecraft",
+            "clark",
+            "sweden",
+            "comforting_memories",
+            "floating_dream",
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "left_to_bloom",
+            "key",
+            "oxygene",
+            "one_more_day",
+            "dry_hands",
+            "wet_hands",
+            "mice_on_venus",
+            "aerie",
+            "firebugs",
+            "labyrinthine"
+        );
+
+        public List<String> frozenPeaksSongs = List.of(
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "dry_hands",
+            "wet_hands",
+            "mice_on_venus",
+            "stand_tall"
+        );
+
+        public List<String> groveSongs = List.of(
+            "minecraft",
+            "clark",
+            "sweden",
+            "comforting_memories",
+            "infinite_amethyst",
+            "key",
+            "oxygene",
+            "mice_on_venus",
+            "wending"
+        );
+
+        public List<String> jaggedPeaksSongs = List.of(
+            "floating_dream",
+            "subwoofer_lullaby",
+            "living_mice",
+            "key",
+            "oxygene",
+            "dry_hands",
+            "wet_hands",
+            "mice_on_venus",
+            "stand_tall",
+            "wending"
+        );
+
+        public List<String> jungleSongs = List.of(
+            "bromeliad",
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "left_to_bloom",
+            "key",
+            "oxygene",
+            "dry_hands",
+            "wet_hands",
+            "mice_on_venus"
+        );
+
+        public List<String> lushCavesSongs = List.of(
+            "an_ordinary_day",
+            "minecraft",
+            "clark",
+            "sweden",
+            "echo_in_the_wind",
+            "floating_dream",
+            "one_more_day",
+            "mice_on_venus",
+            "aerie",
+            "firebugs",
+            "labyrinthine"
+        );
+
+        public List<String> meadowSongs = List.of(
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "left_to_bloom",
+            "one_more_day"
+        );
+
+        public List<String> oldGrowthTaigaSongs = List.of(
+            "minecraft",
+            "clark",
+            "sweden",
+            "comforting_memories",
+            "floating_dream",
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "left_to_bloom",
+            "key",
+            "oxygene",
+            "one_more_day",
+            "dry_hands",
+            "wet_hands",
+            "mice_on_venus",
+            "aerie",
+            "firebugs",
+            "labyrinthine"
+        );
+
+        public List<String> snowySlopesSongs = List.of(
+            "an_ordinary_day",
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "one_more_day",
+            "stand_tall"
+        );
+
+        public List<String> sparseJungleSongs = List.of(
+            "bromeliad",
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "left_to_bloom",
+            "key",
+            "oxygene",
+            "dry_hands",
+            "wet_hands",
+            "mice_on_venus"
+        );
+
+        public List<String> stonyPeaksSongs = List.of(
+            "subwoofer_lullaby",
+            "living_mice",
+            "haggstrom",
+            "danny",
+            "dry_hands",
+            "wet_hands",
+            "mice_on_venus",
+            "stand_tall",
+            "wending"
+        );
+
+        public List<String> swampSongs = List.of(
+            "aerie",
+            "firebugs",
+            "labyrinthine"
+        );
     }
 
     public static class UnderwaterConfig {
@@ -131,6 +451,11 @@ public class ModConfig {
         public int minSongDelay = 12000;
         public int maxSongDelay = 24000;
         public float volume = 100;
+        public List<String> songs = List.of(
+                "axolotl",
+                "dragon_fish",
+                "shuniji"
+        );
     }
 
     public static class EndConfig {
@@ -138,6 +463,8 @@ public class ModConfig {
         public int minSongDelay = 6000;
         public int maxSongDelay = 24000;
         public float volume = 100;
+        public List<String> endSongs = List.of("the_end");
+        public List<String> dragonSongs = List.of("boss");
     }
 
     public static class NetherConfig {
@@ -145,11 +472,51 @@ public class ModConfig {
         public int minSongDelay = 12000;
         public int maxSongDelay = 24000;
         public float volume = 100;
+        public boolean specificNetherMusic = true;
+        public List<String> songs = List.of(
+            "concrete_halls",
+            "dead_voxel",
+            "warmth",
+            "ballad_of_the_cats",
+            "so_below",
+            "chrysopoeia",
+            "rubedo"
+        );
+        public List<String> basaltDeltasSongs = List.of(
+            "concrete_halls",
+            "dead_voxel",
+            "warmth",
+            "ballad_of_the_cats",
+            "so_below"
+        );
+        public List<String> crimsonForestSongs = List.of(
+            "chrysopoeia",
+            "concrete_halls",
+            "dead_voxel",
+            "warmth",
+            "ballad_of_the_cats"
+        );
+        public List<String> netherWastesSongs = List.of(
+            "concrete_halls",
+            "dead_voxel",
+            "warmth",
+            "ballad_of_the_cats",
+            "rubedo"
+        );
+        public List<String> soulSandValleySongs = List.of(
+            "concrete_halls",
+            "dead_voxel",
+            "warmth",
+            "ballad_of_the_cats",
+            "so_below"
+        );
+        public List<String> warpedForestSongs = List.of();
     }
 
     public static class CreditsConfig {
         public boolean enabled = true;
         public float volume = 100;
+        public List<String> songs = List.of("alpha");
     }
 
     public static class JukeboxConfig {

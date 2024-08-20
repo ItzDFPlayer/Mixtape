@@ -3,16 +3,21 @@ package gay.aliahx.mixtape.config;
 import dev.isxander.yacl3.api.*;
 import dev.isxander.yacl3.api.controller.*;
 import gay.aliahx.mixtape.Mixtape;
+import gay.aliahx.mixtape.gui.MusicList.MusicListOption;
+import gay.aliahx.mixtape.gui.SongController.SongControllerBuilder;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 
 import java.lang.reflect.Field;
+import java.util.List;
 
 import static gay.aliahx.mixtape.config.ModConfig.getCategory;
 import static gay.aliahx.mixtape.config.ModConfig.getCategoryDefaults;
 
 public class YACLImplementation {
+    private static final ValueFormatter<Double> doubleFormat = v -> Text.literal(String.format("%.0f%%", v));
+
     public static Screen generateConfigScreen(Screen parent) {
         YetAnotherConfigLib.Builder builder = YetAnotherConfigLib.createBuilder().title(getText("config", "title"));
 
@@ -73,20 +78,35 @@ public class YACLImplementation {
                                 })
                                 .build());
                         case "long" ->
-                            categoryBuilder = categoryBuilder.option(getOption(Long.class, category.getName(), field.getName())
-                                .controller(YACLImplementation::getLongSlider)
-                                .binding((Long) defaultValue, () -> {
-                                    try {
-                                        return (Long) currentCategory.getClass().getField(field.getName()).get(currentCategory);
-                                    } catch (Exception ignored) {
-                                        return 0L;
-                                    }
-                                }, value -> {
-                                    try {
-                                        currentCategory.getClass().getField(field.getName()).set(currentCategory, value);
-                                    } catch (Exception ignored) {}
-                                })
-                                .build());
+                                categoryBuilder = categoryBuilder.option(getOption(Long.class, category.getName(), field.getName())
+                                        .controller(YACLImplementation::getLongSlider)
+                                        .binding((Long) defaultValue, () -> {
+                                            try {
+                                                return (Long) currentCategory.getClass().getField(field.getName()).get(currentCategory);
+                                            } catch (Exception ignored) {
+                                                return 0L;
+                                            }
+                                        }, value -> {
+                                            try {
+                                                currentCategory.getClass().getField(field.getName()).set(currentCategory, value);
+                                            } catch (Exception ignored) {}
+                                        })
+                                        .build());
+                        case "double" ->
+                                categoryBuilder = categoryBuilder.option(getOption(Double.class, category.getName(), field.getName())
+                                        .controller(YACLImplementation::getDoubleSlider)
+                                        .binding((Double) defaultValue, () -> {
+                                            try {
+                                                return (Double) currentCategory.getClass().getField(field.getName()).get(currentCategory);
+                                            } catch (Exception ignored) {
+                                                return 0D;
+                                            }
+                                        }, value -> {
+                                            try {
+                                                currentCategory.getClass().getField(field.getName()).set(currentCategory, value);
+                                            } catch (Exception ignored) {}
+                                        })
+                                        .build());
                         case "class gay.aliahx.mixtape.config.ModConfig$MusicType" ->
                             categoryBuilder = categoryBuilder.option(getOption(ModConfig.MusicType.class, category.getName(), field.getName())
                                 .controller(YACLImplementation::getEnumSelectorMusicType)
@@ -103,21 +123,43 @@ public class YACLImplementation {
                                 })
                                 .build());
                         case "class gay.aliahx.mixtape.config.ModConfig$SongLocation" ->
-                                categoryBuilder = categoryBuilder.option(getOption(ModConfig.SongLocation.class, category.getName(), field.getName())
-                                        .controller(YACLImplementation::getEnumSelectorSongLocation)
-                                        .binding((ModConfig.SongLocation) defaultValue, () -> {
+                            categoryBuilder = categoryBuilder.option(getOption(ModConfig.SongLocation.class, category.getName(), field.getName())
+                                    .controller(YACLImplementation::getEnumSelectorSongLocation)
+                                    .binding((ModConfig.SongLocation) defaultValue, () -> {
+                                        try {
+                                            return (ModConfig.SongLocation) currentCategory.getClass().getField(field.getName()).get(currentCategory);
+                                        } catch (Exception ignored) {
+                                            return ModConfig.SongLocation.PAUSE_SCREEN;
+                                        }
+                                    }, value -> {
+                                        try {
+                                            currentCategory.getClass().getField(field.getName()).set(currentCategory, value);
+                                        } catch (Exception ignored) {}
+                                    })
+                                    .build());
+                        case "interface java.util.List" -> {
+                            if(!field.getName().equals("favouriteSongs")) {
+//                                categoryBuilder = categoryBuilder.group(ListOption.createBuilder(String.class)
+                                categoryBuilder = categoryBuilder.group(MusicListOption.createBuilder(String.class)
+                                        .name(getText(category.getName(), field.getName()))
+                                        .controller(SongControllerBuilder::create)
+//                                        .controller(StringControllerBuilder::create)
+                                        .binding((List<String>) defaultValue, () -> {
                                             try {
-                                                return (ModConfig.SongLocation) currentCategory.getClass().getField(field.getName()).get(currentCategory);
+                                                return (List<String>) currentCategory.getClass().getField(field.getName()).get(currentCategory);
                                             } catch (Exception ignored) {
-                                                return ModConfig.SongLocation.PAUSE_SCREEN;
+                                                return List.of();
                                             }
                                         }, value -> {
                                             try {
                                                 currentCategory.getClass().getField(field.getName()).set(currentCategory, value);
                                             } catch (Exception ignored) {}
                                         })
+                                        .initial("")
+                                        .collapsed(true)
                                         .build());
-
+                            }
+                        }
                         default -> Mixtape.LOGGER.warn("Unknown config option type: " + field.getType() + ". for " + field.getName());
                     }
                 }
@@ -146,6 +188,10 @@ public class YACLImplementation {
 
     private static FloatSliderControllerBuilder getFloatSlider(Option<Float> option) {
         return FloatSliderControllerBuilder.create(option).range((float) 0, (float) 400).step((float) 1);
+    }
+
+    private static DoubleSliderControllerBuilder getDoubleSlider(Option<Double> option) {
+        return DoubleSliderControllerBuilder.create(option).range((double) 0, (double) 100).step((double) 1).formatValue(doubleFormat);
     }
 
     private static LongSliderControllerBuilder getLongSlider(Option<Long> option) {
