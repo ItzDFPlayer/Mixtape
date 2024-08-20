@@ -4,6 +4,7 @@ import gay.aliahx.mixtape.Mixtape;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.sound.MusicTracker;
+import net.minecraft.client.sound.MusicType;
 import net.minecraft.client.sound.SoundInstance;
 import net.minecraft.sound.MusicSound;
 import net.minecraft.sound.SoundCategory;
@@ -56,7 +57,8 @@ public abstract class MusicTrackerMixin {
             }
         });
 
-        boolean scaleMusic = Mixtape.discPlaying;
+        boolean scaleMusic = Mixtape.discPlaying || Mixtape.previewingSong;
+
         if(scaleMusic && Mixtape.volumeScale > 0.1f) {
             Mixtape.volumeScale -= 0.1f;
         } else if (scaleMusic && Mixtape.volumeScale <= 0.1f) {
@@ -115,8 +117,10 @@ public abstract class MusicTrackerMixin {
 
     @Redirect(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/sound/MusicSound;shouldReplaceCurrentMusic()Z"))
     private boolean shouldReplaceCurrentMusicMixin(MusicSound instance) {
-        if(config.main.enabled && !config.main.stopMusicWhenLeftGame && !Objects.equals(instance.getSound().value().getId().toString(), "minecraft:music.dragon")) {
-            return false;
+        if(config.main.enabled) {
+            if (!instance.getSound().value().getId().toString().equals("minecraft:music.dragon") || Mixtape.currentSong.equals("mixtape:music.boss")) {
+                return false;
+            }
         }
         return instance.shouldReplaceCurrentMusic();
     }
