@@ -77,14 +77,14 @@ public abstract class OptionsScreenMixin extends Screen {
         // a second time otherwise it renders behind the mixtape button :P
     }
 
-    @Inject(method = "render", at = @At("TAIL"))
-    private void renderMixin(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {
-        if(config.main.enabled && config.main.showCurrentSong && config.main.songLocation == ModConfig.SongLocation.OPTIONS_SCREEN) {
-            String[] arr = Mixtape.currentSong.split("/");
-            MusicManager.Entry song = Mixtape.musicManager.getEntry(arr[arr.length - 1]);
+    // @Inject(method = "render", at = @At("TAIL"))
+    // private void renderMixin(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+        // if(config.main.enabled && config.main.showCurrentSong && config.main.songLocation == ModConfig.SongLocation.OPTIONS_SCREEN) {
+            // String[] arr = Mixtape.currentSong.split("/");
+            // MusicManager.Entry song = Mixtape.musicManager.getEntry(arr[arr.length - 1]);
 
-            String currentSongString = "♫ " + song.getArtist() + " - " + song.getName() + " ♫";
-            context.drawText(textRenderer, currentSongString, (this.width / 2) - (textRenderer.getWidth(currentSongString) / 2), this.height / 6 + 30, 0xFFFFFF, true);
-        }
-    }
+            // String currentSongString = "♫ " + song.getArtist() + " - " + song.getName() + " ♫";
+            // context.drawText(textRenderer, currentSongString, (this.width / 2) - (textRenderer.getWidth(currentSongString) / 2), this.height / 6 + 30, 0xFFFFFF, true);
+        // }
+    // }
 }
